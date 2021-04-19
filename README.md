@@ -1,11 +1,11 @@
-SBST-report-generator
+# SBST-report-generator
 
-#SET UP: 
+## SET UP: 
 
-##Install Python (3.7.x) 
+### Install Python (3.7.x) 
 
 
-##Install dependencies: 
+### Install dependencies: 
 - requests 
 - pandas (pip install pandas)
 - lxml (pip install lxml)
@@ -16,9 +16,9 @@ SBST-report-generator
 
 Get config.py file 
 
-#RUN:
+## RUN:
 
-##Launch IDE with debugging features eg: VS Code 
+### Launch IDE with debugging features eg: VS Code 
 - Run scrape.py in debug mode 
 - Wait for 3-5 minutes 
 - Report will be generated 
