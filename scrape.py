@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from docx import Document
 import time
+import config
 
 
 
@@ -16,8 +17,8 @@ driver = webdriver.Chrome(options=chrome_options)
 
 def login():
     driver.get("https://noc-sg-prd.veniam.com")
-    driver.find_element_by_id("username").send_keys("starhub_monitoring")
-    driver.find_element_by_id("password").send_keys("ry5XRAUU5b0QOzyrYHa95jYr65zHJiZp")
+    driver.find_element_by_id("username").send_keys(config.username)
+    driver.find_element_by_id("password").send_keys(config.password)
     driver.find_element_by_class_name("mdl-button__ripple-container").click()
 
 
@@ -70,7 +71,7 @@ def scrape():
 
 def addBusDepot():
     print("Opening sbst xlsx..")
-    data = pd.read_excel(r'../SBST.xlsx')
+    data = pd.read_excel(r'SBST.xlsx')
     df = pd.DataFrame(data, columns= ['Bus Depot','OBU Serial No'])
     dflist = list(df.index)
 
