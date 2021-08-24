@@ -60,7 +60,7 @@ def scrape():
     for rowD in range(doc_row):
         for col in range(len(indexes)):
             data = driver.find_element_by_xpath("//*[@id=\"devices-table-container\"]/table/div/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[" +str(rowD+1)+"]/datatable-body-row/div[2]/datatable-body-cell["+str(indexes[col])+ "]").text
-            #print(data)
+            print(data)
             cell = table.cell(rowD+1, col+1)
             cell.text = data
    
