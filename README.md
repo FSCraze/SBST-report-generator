@@ -4,7 +4,8 @@
 
 ### Download all the files in this repository and drop them in a directory 
 
-### Install Anaconda w/ Python here: https://www.anaconda.com/products/individual 
+### Install Anaconda w/ Python here: https://anaconda.org/anaconda/python/files?version=3.7.4
+- Select the installation file for your operating system 
 
 
 ### Install dependencies: (run highlighted commands in conda prompt ) 
@@ -22,10 +23,19 @@
 
 - Launch conda prompt 
 - change directory to folder containing `scrape.py` file
--  run `python scrape.py` 
+- run `python scrape.py` 
+- let it run for 10 - 15 minutes 
+- file generated is named `test.doc` 
 
 
+## TROUBLESHOOTING  
 
-## Troubleshooting 
+### Chromedriver-related issues: 
+-  Download a newer version of chrome driver here if it's giving you an error: https://chromedriver.chromium.org/downloads
 
-### Download a newer version of chrome driver here if it's giving you an error: https://chromedriver.chromium.org/downloads
+
+### dependency-related issues: 
+- Make sure dependencies are installed properly on conda prompt 
+
+### Python version issues: 
+- If you have installed a different version of python and Anaconda, revert back to the one listed above (Python 3.7.4) 
