@@ -2,23 +2,30 @@
 
 ## SET UP: 
 
-### Install Python (3.7.x) 
+### Download all the files in this repository and drop them in a directory 
+
+### Install Anaconda w/ Python here: https://www.anaconda.com/products/individual 
 
 
-### Install dependencies: 
-- requests 
-- pandas (pip install pandas)
-- lxml (pip install lxml)
-- bs4/BeautifulSoup (pip install bs4)
-- selenium (chrome) (pip install selenium) 
-- docx (pip install docx) 
+### Install dependencies: (run highlighted commands in conda prompt ) 
+- requests (`pip install requests`) 
+- pandas (`pip install pandas`)
+- lxml (`pip install lxml`)
+- bs4/BeautifulSoup (`pip install bs4`)
+- selenium (chrome) (`pip install selenium`) 
+- docx (`pip install docx`) 
+
+### Enter username and password in `config.py` 
+(make sure to put them inside the quotes, eg: `username = "xxxx_xxxxxxx"`)
+
+## RUNNING SCRIPT:
+
+- Launch conda prompt 
+- change directory to folder containing `scrape.py` file
+-  run `python scrape.py` 
 
 
-Get config.py file 
 
-## RUN:
+## Troubleshooting 
 
-### Launch IDE with debugging features eg: VS Code 
-- Run scrape.py in debug mode 
-- Wait for 3-5 minutes 
-- Report will be generated 
+### Download a newer version of chrome driver here if it's giving you an error: https://chromedriver.chromium.org/downloads
