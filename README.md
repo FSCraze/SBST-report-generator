@@ -2,13 +2,16 @@
 
 ## SET UP: 
 
-### Download all the files in this repository and drop them in a directory 
+### Initial downloads
+- Download all the files in this repository and drop them in a directory 
 
-### Install Anaconda w/ Python here: https://anaconda.org/anaconda/python/files?version=3.7.4
-- Select the installation file for your operating system 
+- Install Anaconda w/ Python here: https://anaconda.org/anaconda/python/files?version=3.7.4
+  -  Select the installation file for your operating system 
 
 
-### Install dependencies: (run highlighted commands in conda prompt ) 
+
+### Install dependencies: 
+run highlighted commands in conda prompt 
 - requests (`pip install requests`) 
 - pandas (`pip install pandas`)
 - lxml (`pip install lxml`)
@@ -16,8 +19,9 @@
 - selenium (chrome) (`pip install selenium`) 
 - docx (`pip install docx`) 
 
-### Enter username and password in `config.py` 
-(make sure to put them inside the quotes, eg: `username = "xxxx_xxxxxxx"`)
+### Login credentials
+- Enter username and password in `config.py` 
+- make sure to put them inside the quotes, eg: `username = "xxxx_xxxxxxx"`
 
 ## RUNNING SCRIPT:
 
